@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: gcutrini/openinfra-gatsby-netlify
+  repo: OpenStackweb/openinfralabs-website
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
