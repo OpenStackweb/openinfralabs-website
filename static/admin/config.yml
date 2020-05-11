@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: OpenStackweb/openinfralabs-website
-  branch: master
+  name: git-gateway
+  branch: add-page-cms
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
