@@ -121,13 +121,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
-          - {label: SEO, name: seo, widget: object, fields: [
-              {label: "Title", name: "title", widget: string},
-              {label: "Description", name: "description", widget: string},
-              {label: "Url", name: "url", widget: string},
-              {label: "Image", name: "image", widget: image},
-            ]}
-          - {label: Header, name: header, widget: object, fields: [              
-              {label: Subtitle, name: subTitle, widget: text},
-            ]}          
-          - {label: "Body", name: body, widget: markdown}  
+      - {label: SEO, name: seo, widget: object, fields: [
+          {label: "Title", name: "title", widget: string},
+          {label: "Description", name: "description", widget: string},
+          {label: "Url", name: "url", widget: string},
+          {label: "Image", name: "image", widget: image},
+        ]}
+      - {label: Header, name: header, widget: object, fields: [
+          {label: Subtitle, name: subTitle, widget: text},
+        ]}
+      - {label: "Body", name: body, widget: markdown}
