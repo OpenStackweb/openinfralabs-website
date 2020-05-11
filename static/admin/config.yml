@@ -126,8 +126,5 @@ collections:
           {label: "Url", name: "url", widget: string},
           {label: "Image", name: "image", widget: image},
         ]}
-      - {label: Header, name: header, widget: object, fields: [
-          {label: Title, name: title, widget: string},
-          {label: Subtitle, name: subTitle, widget: text},
-        ]}
+      - {label: Title, name: title, widget: string}
       - {label: "Body", name: body, widget: markdown}

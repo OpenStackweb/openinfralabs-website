@@ -5,9 +5,7 @@ seo:
   image: /img/svg/logo.svg
   title: Home
   url: 'https://openinfralabs.org/operate-first-community-manifesto'
-header:
-  title: OPENINFRA LABS
-  subTitle: Operate First Community Manifesto
+title: 'Operate First Community Manifesto'
 ---
 
 A fairly widespread realization that open source is lagging behind proprietary software when it comes to cloud computing, specifically in the operation of the cloud, has fostered several things.

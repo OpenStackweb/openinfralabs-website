@@ -14,7 +14,7 @@ import LinkComponent from '../components/LinkComponent'
 
 export const CustomPageTemplate = ({
   seo,
-  header,  
+  title,  
   content,
   contentComponent
 }) => {
@@ -44,8 +44,8 @@ export const CustomPageTemplate = ({
       <aside className="sidebar"></aside> 
       <main aria-labelledby="main-title" className="home">
         <header className="hero">
-          <h1 id="main-title">{header.title}</h1> 
-          {header.subTitle && <p className="description" dangerouslySetInnerHTML={{__html: header.subTitle}}></p>}
+          <h1 id="main-title">OPENINFRA LABS</h1> 
+          <p className="description" dangerouslySetInnerHTML={{__html: title}}></p>
         </header>                 
         
         <PageContent className="theme-default-content custom content__default" content={content} />
@@ -57,10 +57,7 @@ export const CustomPageTemplate = ({
 
 CustomPageTemplate.propTypes = {  
   seo: PropTypes.object,
-  header: PropTypes.object,
-  intro: PropTypes.object,
-  features: PropTypes.object,  
-  sponsors: PropTypes.object,
+  title: PropTypes.object,  
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -73,10 +70,7 @@ const CustomPage = ({ data }) => {
       <CustomPageTemplate
         seo={frontmatter.seo}
         contentComponent={HTMLContent}
-        header={frontmatter.header}        
-        intro={frontmatter.intro}
-        features={frontmatter.features}
-        sponsors={frontmatter.sponsors}
+        title={frontmatter.title}        
         content={html}
       />
     </Layout>
@@ -112,10 +106,7 @@ export const customPageQuery = graphql`
             publicURL            
           }
         }
-        header {
-          title
-          subTitle          
-        }         
+        title
       }
     }
   }
