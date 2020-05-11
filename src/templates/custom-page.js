@@ -23,7 +23,7 @@ export const CustomPageTemplate = ({
   return (
     <div className="theme-container no-navbar no-sidebar">
       {seo && 
-      <Helmet title={seo.title ? seo.title : metadata.siteMetadata.title} titleTemplate={metadata.siteMetadata.titleTemplate}>        
+      <Helmet title={seo.title ? seo.title : title} titleTemplate={metadata.siteMetadata.titleTemplate}>        
         {seo.description && <meta name="description" content={seo.description} />}
         {seo.image && <meta name="image" content={`${withPrefix('/')}${seo.image.publicURL}`} />}        
         {seo.url && <meta property="og:url" content={seo.url} />}
