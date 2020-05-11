@@ -6,9 +6,6 @@ seo:
   title: Home
   url: 'https://openinfralabs.org/operate-first-community-manifesto'
 header:
-  subTitle: >-
-    <span>An <a href="https://osf.dev" target="_blank" rel="noopener">OSF</a>
-    Project</span>
   title: Operate First Community Manifesto
 ---
 
