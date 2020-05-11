@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { CustomPageTemplate } from '../../templates/custom-page'
 
-const CustomPreview = ({ entry, getAsset, widgetFor }) => {
+const CustomPagePreview = ({ entry, getAsset, widgetFor }) => {
   return (
     <CustomPageTemplate
       title={entry.getIn(['data', 'title'])}
@@ -11,11 +11,11 @@ const CustomPreview = ({ entry, getAsset, widgetFor }) => {
   )
 }
 
-CustomPreview.propTypes = {
+CustomPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default CustomPreview
+export default CustomPagePreview
