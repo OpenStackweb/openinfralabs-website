@@ -3,7 +3,7 @@ templateKey: custom-page
 seo:
   description: OpenInfra Labs
   image: /img/svg/logo.svg
-  title: Home
+  title: Operate First Community Manifesto
   url: 'https://openinfralabs.org/operate-first-community-manifesto'
 title: 'Operate First Community Manifesto'
 ---
